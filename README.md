@@ -54,7 +54,7 @@ The homebrew tools package up gpg, gpg-agent & gpg2, I've tested working against
 
 ### Generate a public key
 
-There are plenty of guides online on generating your gpg key pair, the important bit is that the key should be an sign & encryption key, not sign only, and that the Email Address should match your HP SEA so that people can find you, here's what it looks like under Ubuntu:
+There are plenty of guides online on generating your gpg key pair, the important bit is that the key should be a sign & encryption key, not sign only, and that the Email Address should match your known email address so that people can find you, here's what it looks like under Ubuntu:
 
     $ gpg --gen-key
 
