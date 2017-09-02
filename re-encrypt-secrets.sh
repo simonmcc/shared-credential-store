@@ -28,7 +28,7 @@ for file in $FILES; do
 
   if [ -n "${SECRET}" ]; then
     # we have decrypted something, re-encrypt it
-    echo ${SECRET} | ./encrypt.sh - > ${TOP}/${file}
+    echo "${SECRET}" | ./encrypt.sh - > ${TOP}/${file}
   else
     echo "ERROR: Tried to decrypt ${TOP}/${file} and failed!"
   fi

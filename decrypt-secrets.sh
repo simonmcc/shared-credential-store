@@ -41,4 +41,4 @@ else
 fi
 
 # decrypt the password file to the OS_PASSWORD env var
-export ${EXPORT_SECRET_AS}=$(${GPG} --batch --use-agent --logger-file /dev/null --decrypt -o - ${PWGPG})
+export ${EXPORT_SECRET_AS}="$(${GPG} --batch --use-agent --logger-file /dev/null --decrypt -o - ${PWGPG})"
